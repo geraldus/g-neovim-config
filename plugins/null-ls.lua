@@ -1,0 +1,39 @@
+local present, null_ls = pcall(require, "null-ls")
+
+if not present then
+  return
+end
+
+local b = null_ls.builtins
+local h = require "null-ls.helpers"
+
+local stylish_haskell_format = {
+  method = require("null-ls").methods.FORMATTING,
+
+  filetypes = { "haskell" },
+
+  generator = h.formatter_factory {
+    command = "stylish-haskell",
+    to_stdin = true,
+  },
+}
+
+local sources = {
+
+  -- webdev stuff
+  -- b.formatting.deno_fmt,
+  -- b.formatting.prettier,
+
+  -- Lua
+  b.formatting.stylua,
+  stylish_haskell_format,
+
+  -- Shell
+  -- b.formatting.shfmt,
+  -- b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
+}
+
+null_ls.setup {
+  debug = true,
+  sources = sources,
+}
