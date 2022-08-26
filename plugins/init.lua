@@ -6,6 +6,10 @@ return {
     end,
   },
 
+  ["folke/which-key.nvim"] = {
+    disable = false,
+  },
+
   ["famiu/bufdelete.nvim"] = {},
 
   ["goolord/alpha-nvim"] = {
