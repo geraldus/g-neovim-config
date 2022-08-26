@@ -96,4 +96,7 @@ return {
     run = "./install.sh",
   },
 
+  ["https://gitlab.com/yorickpeterse/nvim-window"] = {
+    as = "nvim-window"
+  },
 }
