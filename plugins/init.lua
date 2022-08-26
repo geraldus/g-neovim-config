@@ -91,4 +91,9 @@ return {
     end,
   },
 
+  ["tzachar/cmp-tabnine"] = {
+    after = "nvim-cmp",
+    run = "./install.sh",
+  },
+
 }
