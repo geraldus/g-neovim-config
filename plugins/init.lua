@@ -12,8 +12,6 @@ return {
     disable = false,
   },
 
-  -- ["natecraddock/workspaces.nvim"] = {},
-
   ["jose-elias-alvarez/null-ls.nvim"] = {
     after = "nvim-lspconfig",
     config = function()
@@ -71,12 +69,6 @@ return {
   },
 
   ["luc-tielen/telescope_hoogle"] = {},
-
-  ["folke/trouble.nvim"] = {
-    config = function()
-      require("trouble").setup {}
-    end,
-  },
 
   ["simrat39/symbols-outline.nvim"] = {},
 }

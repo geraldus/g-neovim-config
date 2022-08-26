@@ -32,6 +32,7 @@ M.plugins = {
   remove = {
     "natecraddock/workspaces.nvim",
     "stevearc/aerial.nvim",
+    "folke/trouble.nvim",
   },
 }
 
