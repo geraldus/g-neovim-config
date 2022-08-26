@@ -97,6 +97,6 @@ return {
   },
 
   ["https://gitlab.com/yorickpeterse/nvim-window"] = {
-    as = "nvim-window"
+    as = "nvim-window",
   },
 }

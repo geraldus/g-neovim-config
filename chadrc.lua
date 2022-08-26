@@ -39,13 +39,20 @@ M.plugins = {
 M.mappings = {
   telescope = {
     n = {
+      ["<leader>fx"] = {
+        "<cmd> :lua require('telescope.builtin').find_files { no_ignore = true } <CR>",
+        "  find files (no ignore)",
+      },
       ["<leader>fs"] = { "<cmd> :Telescope lsp_dynamic_workspace_symbols <CR>", "  find dynamic symbol" },
       ["<leader>fr"] = { "<cmd> :Telescope lsp_references <CR>", " referenses" },
       ["<leader>fd"] = { "<cmd> :Telescope diagnostics <CR>", "  diagnostics" },
       ["<leader>ld"] = { "<cmd> lua vim.lsp.diagnostics.show_position_diagnostics() <CR>", "  diagnostics" },
       ["<leader>tt"] = { "<cmd> :Telescope <CR>", "  diagnostics" },
+      ["<leader>tt"] = { "<cmd> :Telescope <CR>", "  Telescope" },
       ["<leader>sy"] = { "<cmd> :SymbolsOutlineOpen <CR>", "  diagnostics" },
-      ["]]]"] = { "<cmd> :Bdelete <CR>", "窱 delete buffer (BDelete)" },
+      ["<leader>x"] = { "<cmd> :Bdelete <CR>", "窱 delete buffer (BDelete)" },
+      ["<leader>w"] = { "<cmd> :lua require('nvim-window').pick()<CR>", " switch window" },
+      ["<leader>ca"] = { "<cmd> :Lspsaga code_action<CR>", " switch window" },
     },
   },
 }
