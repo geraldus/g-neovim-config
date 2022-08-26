@@ -75,4 +75,9 @@ return {
   ["luc-tielen/telescope_hoogle"] = {},
 
   ["simrat39/symbols-outline.nvim"] = {},
+
+  ["TimUntersberger/neogit"] = {
+    requires = "nvim-lua/plenary.nvim",
+  },
+
 }
